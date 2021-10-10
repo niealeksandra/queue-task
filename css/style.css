@@ -1,0 +1,85 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f2eeeb;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+button#add {
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: 0px;
+    transition: .3s;
+    background-color: #d99cb2;
+    color: #f2eeeb;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button#add:hover {
+    background-color: #025940;
+    cursor: pointer;
+}
+
+#zadania {
+    width: 100vw;
+    min-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#zadania > #kolejka {
+    border-right: #F2B705 2px dashed;
+}
+
+#zadania > #wykonywane {
+    border-right: #025940 2px dashed;
+}
+
+#zadania > .zadania-item {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+}
+
+#zadania > .zadania-item > p {
+    width: 200px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 30px;
+    position: relative;
+}
+
+#zadania > #zrobione > p {
+    padding-left: 40px;
+    position: relative;
+}
+
+
+#zadania > .zadania-item > h1 {
+    width: 200px;
+    font-size: 15px;
+    text-align: left;
+    margin: 20px 0px 20px 30px;
+}
+
+
+#zadania > .zadania-item > p > button{
+   padding: 0px 10px;
+   border: none;
+   background-color: #f2eeeb;
+   color: #BF2C2C;
+   font-size: 12px;
+   position: absolute;
+   left: 0px;
+}
+
+#zadania > .zadania-item > p > button:hover{
+    transition: .3s;
+    background-color: #BF2C2C;
+    color:#f2eeeb;
+    cursor: pointer;
+ }
